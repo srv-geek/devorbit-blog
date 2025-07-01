@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Welcome to DevOrbit - Code. Learn. Elevate.">
+
+  <title>DevOrbit - Code. Learn. Elevate.</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand fw-bold fs-3" href="#">
+      <i class="fas fa-globe text-info me-2"></i> DevOrbit
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <div class="mx-2 d-flex align-items-center">
+        <button class="btn btn-outline-info rounded-pill mr-2" data-toggle="modal" data-target="#loginModal">Login</button>
+        <button class="btn btn-outline-success rounded-pill mr-3" data-toggle="modal" data-target="#signupModal">Sign Up</button>
+        <!-- Theme Toggle Icon -->
+        <button class="btn btn-outline-light rounded-circle" id="themeToggle" title="Toggle Night Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/Carousel1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Welcome to DevOrbit</h2>
+          <p>Technology News, Development and Trends</p>
+          <button class="btn btn-gradient">Web Development</button>
+          <button class="btn btn-outline-light">Technology</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Carousel2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>The Best Coding Blog</h2>
+          <p>Explore Insights, Tutorials, and More</p>
+          <button class="btn btn-gradient">UI/UX</button>
+          <button class="btn btn-outline-light">Trends</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Carousel3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Stay Updated</h2>
+          <p>Latest in Technology and Development</p>
+          <button class="btn btn-gradient">News</button>
+          <button class="btn btn-outline-light">Coding</button>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <!-- Cards Section -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="row no-gutters">
+            <div class="col-md-8 p-3">
+              <h5 class="card-title">Global Conferences</h5>
+              <p class="card-text">Get the latest updates from technology summits and developer meetups worldwide.</p>
+              <a href="#" class="btn btn-outline-info btn-sm">Read More</a>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/Global_Conferences.png" class="img-fluid mx-auto d-block rounded" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="row no-gutters">
+            <div class="col-md-8 p-3">
+              <h5 class="card-title">Learn Designing</h5>
+              <p class="card-text">Improve your design skills with our curated tutorials and guides for UI/UX.</p>
+              <a href="#" class="btn btn-outline-info btn-sm">Read More</a>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/Designing.png" class="img-fluid mx-auto d-block rounded" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="row no-gutters">
+            <div class="col-md-8 p-3">
+              <h5 class="card-title">Latest Technology</h5>
+              <p class="card-text">Explore the latest advancements in AI, Quantum Computing, and Space Tech reshaping the future.</p>
+              <a href="#" class="btn btn-outline-info btn-sm">Read More</a>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/Latest_Technology.png" class="img-fluid mx-auto d-block rounded" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow-sm">
+          <div class="row no-gutters">
+            <div class="col-md-8 p-3">
+              <h5 class="card-title">Tech Innovations</h5>
+              <p class="card-text">Get insights into breakthrough technologies, startups, and the future of the digital world.</p>
+              <a href="#" class="btn btn-outline-info btn-sm">Read More</a>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/Tech_Innovations.png" class="img-fluid mx-auto d-block rounded" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="p-4 text-center">
+    <div>
+      <a href="https://github.com/srv-geek" class="mx-2"><i class="fab fa-github fa-lg"></i></a>
+      <a href="https://www.linkedin.com/in/shubhamverma-dev" class="mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+      <a href="mailto:vermashubham.srv@mail.com" class="mx-2"><i class="fas fa-envelope fa-lg"></i></a>
+    </div>
+    <p class="mt-2">© 2025 DevOrbit | All rights reserved.</p>
+  </footer>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to DevOrbit</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="loginEmail">Email address</label>
+              <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="loginPassword">Password</label>
+              <input type="password" class="form-control" id="loginPassword" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="loginCheck">
+              <label class="form-check-label" for="loginCheck">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-gradient btn-block">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Get a DevOrbit Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="signupEmail">Email address</label>
+              <input type="email" class="form-control" id="signupEmail" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="signupPassword">Password</label>
+              <input type="password" class="form-control" id="signupPassword" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="signupConfirmPassword">Confirm Password</label>
+              <input type="password" class="form-control" id="signupConfirmPassword" placeholder="Confirm Password">
+            </div>
+            <button type="submit" class="btn btn-gradient btn-block">Create Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+     <!-- JS Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Night Mode Icon Toggle Script -->
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    const themeIcon = themeToggle.querySelector('i');
+
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        body.classList.add('dark-mode');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+      } else {
+        body.classList.remove('dark-mode');
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+      }
+      localStorage.setItem('theme', theme);
+    }
+
+    themeToggle.addEventListener('click', function () {
+      if (body.classList.contains('dark-mode')) {
+        setTheme('light');
+      } else {
+        setTheme('dark');
+      }
+    });
+
+    // Load saved theme on page load
+    window.onload = function () {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      setTheme(savedTheme);
+    };
+  </script>
+</body>
+
+</html>
