@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials | DevOrbit - Code. Learn. Elevate.</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">DevOrbit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="tutorials.html">Tutorials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-light rounded-circle" id="themeToggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container my-5">
+        <h1 class="text-center mb-3" data-aos="fade-down">Tutorials</h1>
+        <p class="text-center mb-5" data-aos="fade-up">
+            Learn, build, and grow with our step-by-step tutorials on frontend, backend, UI/UX, tools, and more.
+        </p>
+    </div>
+
+    <!-- Tutorials Section -->
+    <div class="container">
+        <div class="row">
+
+            <!-- Tutorial Card 1 -->
+            <div class="col-md-6 mb-4" data-aos="zoom-in">
+                <div class="card shadow-sm">
+                    <img src="https://source.unsplash.com/600x400/?frontend,code" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="badge badge-info">Frontend</span>
+                        <span class="badge badge-success">Beginner</span>
+                        <h5 class="card-title mt-2">Building Responsive Websites with Bootstrap</h5>
+                        <p class="card-text">Learn how to create beautiful responsive websites using Bootstrap step by step.</p>
+                        <a href="#" class="btn btn-gradient btn-sm">Start Tutorial</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial Card 2 -->
+            <div class="col-md-6 mb-4" data-aos="zoom-in">
+                <div class="card shadow-sm">
+                    <img src="https://source.unsplash.com/600x400/?javascript,developer" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="badge badge-warning">JavaScript</span>
+                        <span class="badge badge-primary">Intermediate</span>
+                        <h5 class="card-title mt-2">Mastering JavaScript ES6 Features</h5>
+                        <p class="card-text">A complete guide to modern JavaScript ES6+ features with examples.</p>
+                        <a href="#" class="btn btn-gradient btn-sm">Start Tutorial</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial Card 3 -->
+            <div class="col-md-6 mb-4" data-aos="zoom-in">
+                <div class="card shadow-sm">
+                    <img src="https://source.unsplash.com/600x400/?backend,server" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="badge badge-primary">Backend</span>
+                        <span class="badge badge-danger">Advanced</span>
+                        <h5 class="card-title mt-2">REST API Development with Node.js</h5>
+                        <p class="card-text">Learn how to build scalable REST APIs with Node.js, Express, and MongoDB.</p>
+                        <a href="#" class="btn btn-gradient btn-sm">Start Tutorial</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorial Card 4 -->
+            <div class="col-md-6 mb-4" data-aos="zoom-in">
+                <div class="card shadow-sm">
+                    <img src="https://source.unsplash.com/600x400/?design,ux" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="badge badge-secondary">UI/UX</span>
+                        <span class="badge badge-success">Beginner</span>
+                        <h5 class="card-title mt-2">UI/UX Design Principles for Developers</h5>
+                        <p class="card-text">Understand core UI/UX principles to improve your websites and apps.</p>
+                        <a href="#" class="btn btn-gradient btn-sm">Start Tutorial</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="p-4 text-center bg-dark text-light">
+        <div>
+            <a href="https://github.com/srv-geek" class="mx-2"><i class="fab fa-github fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/shubhamverma-dev" class="mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="mailto:vermashubham.srv@mail.com" class="mx-2"><i class="fas fa-envelope fa-lg"></i></a>
+        </div>
+        <p class="mt-2">© 2025 DevOrbit | All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('i');
+
+        function setTheme(theme) {
+            if (theme === 'dark') {
+                body.classList.add('dark-mode');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                body.classList.remove('dark-mode');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+            localStorage.setItem('theme', theme);
+        }
+
+        themeToggle.addEventListener('click', function () {
+            if (body.classList.contains('dark-mode')) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        });
+
+        window.onload = function () {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            setTheme(savedTheme);
+        };
+    </script>
+</body>
+
+</html>

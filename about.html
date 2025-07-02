@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>About | DevOrbit - Code. Learn. Elevate.</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">DevOrbit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tutorials.html">Tutorials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-light rounded-circle" id="themeToggle" title="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <div class="container my-5">
+        <h1 class="text-center mb-5" data-aos="fade-down">About DevOrbit</h1>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6" data-aos="fade-right">
+                <h3>🚀 Our Mission</h3>
+                <p>
+                    DevOrbit is a creative space for developers, designers, and tech enthusiasts. Our mission is to
+                    empower learners by providing insightful tutorials, latest tech news, and innovative resources. We
+                    aim to help you code smarter, design better, and stay ahead in the fast-evolving world of
+                    technology.
+                </p>
+            </div>
+            <div class="col-md-6" data-aos="zoom-in">
+                <img src="assets/about-1.jpg" class="img-fluid rounded shadow" alt="Mission">
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 order-md-2" data-aos="fade-left">
+                <h3>🌐 Who We Are</h3>
+                <p>
+                    DevOrbit is powered by a community of developers, designers, and tech creators who love to share
+                    knowledge. From beginners to professionals, our platform is open to anyone passionate about coding,
+                    UI/UX, cloud technologies, AI, and beyond.
+                </p>
+            </div>
+            <div class="col-md-6 order-md-1" data-aos="zoom-in">
+                <img src="assets/about-2.jpg" class="img-fluid rounded shadow" alt="Who We Are">
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6" data-aos="fade-right">
+                <h3>📚 What You’ll Find Here</h3>
+                <p>
+                    On DevOrbit, you can explore:
+                    <ul>
+                        <li>🔸 Latest Technology Insights</li>
+                        <li>🔸 Web Development Tutorials</li>
+                        <li>🔸 UI/UX Design Principles</li>
+                        <li>🔸 Cloud & AI Innovations</li>
+                        <li>🔸 Developer Tips & Best Practices</li>
+                    </ul>
+                    Join us to stay informed, improve your skills, and connect with the global tech community.
+                </p>
+            </div>
+            <div class="col-md-6" data-aos="zoom-in">
+                <img src="assets/about-3.jpg" class="img-fluid rounded shadow" alt="What You Find">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="p-4 text-center bg-dark text-light">
+        <div>
+            <a href="https://github.com/srv-geek" class="mx-2"><i class="fab fa-github fa-lg"></i></a>
+            <a href="https://www.linkedin.com/in/shubhamverma-dev" class="mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="mailto:vermashubham.srv@mail.com" class="mx-2"><i class="fas fa-envelope fa-lg"></i></a>
+        </div>
+        <p class="mt-2">© 2025 DevOrbit | All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('i');
+
+        function setTheme(theme) {
+            if (theme === 'dark') {
+                body.classList.add('dark-mode');
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                body.classList.remove('dark-mode');
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+            localStorage.setItem('theme', theme);
+        }
+
+        themeToggle.addEventListener('click', function () {
+            if (body.classList.contains('dark-mode')) {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        });
+
+        window.onload = function () {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            setTheme(savedTheme);
+        };
+    </script>
+</body>
+
+</html>
