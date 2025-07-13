@@ -6,7 +6,9 @@ DevOrbit is a fully responsive, multipage blog website designed for developers a
 
 ## 📸 Preview
 
-![DevOrbit Screenshot](https://user-images.githubusercontent.com/YOUR_USERNAME/devorbit-preview.png)
+![DevOrbit Homepage](assets/Devorbit_home.png)
+![DevOrbit About Page](assets/Devorbit_about.png)
+![DevOrbit Blog Page](assets/Devorbit_blog.png)
 
 ---
 
